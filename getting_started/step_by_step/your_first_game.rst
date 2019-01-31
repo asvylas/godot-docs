@@ -799,13 +799,13 @@ Note that a new instance must be added to the scene using
         AddChild(mobInstance);
 
         // Set the mob's direction perpendicular to the path direction.
-        var direction = mobSpawnLocation.Rotation + Mathf.PI / 2;
+        var direction = mobSpawnLocation.Rotation + Mathf.Pi / 2;
 
         // Set the mob's position to a random location.
         mobInstance.Position = mobSpawnLocation.Position;
 
         // Add some randomness to the direction.
-        direction += RandRand(-Mathf.PI / 4, Mathf.PI / 4);
+        direction += RandRand(-Mathf.Pi / 4, Mathf.Pi / 4);
         mobInstance.Rotation = direction;
 
         // Choose the velocity.
